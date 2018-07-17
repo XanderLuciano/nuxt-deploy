@@ -1,31 +1,37 @@
 {
-  "name": "nuxt-deploy",
-  "version": "0.0.1",
-  "description": "A zero downtime deployment script for Nuxt.js and PM2",
-  "main": "index.js",
-  "bin": {
-    "xdeploy": "./index.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/XanderLuciano/nuxt-deploy.git"
-  },
-  "keywords": [
-    "nuxt",
-    "pm2",
-    "deployment",
-    "zero",
-    "downtime"
-  ],
-  "author": "Xander Luciano <XanderLuciano@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/XanderLuciano/nuxt-deploy/issues"
-  },
-  "dependencies": {
-    "commander": "^2.16.0"
-  }
+    "main": "./dist/index.js",
+    "name": "nuxt-deploy",
+    "version": "0.0.1",
+    "description": "A zero downtime deployment script for Nuxt.js and PM2",
+    "bin": {
+        "xdeploy": "./index.js"
+    },
+    "scripts": {
+        "build": "babel src -d dist",
+        "prepublish": "npm run build",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/XanderLuciano/nuxt-deploy.git"
+    },
+    "keywords": [
+        "nuxt",
+        "pm2",
+        "deployment",
+        "zero",
+        "downtime"
+    ],
+    "author": "Xander Luciano <XanderLuciano@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/XanderLuciano/nuxt-deploy/issues"
+    },
+    "dependencies": {
+        "commander": "^2.16.0"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0"
+    }
 }
