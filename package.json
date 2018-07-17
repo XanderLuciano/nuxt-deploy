@@ -1,0 +1,24 @@
+{
+  "name": "nuxt-deploy",
+  "version": "0.1.0",
+  "description": "A zero downtime deployment script for Nuxt.js and PM2",
+  "main": "index.js",
+  "bin": {
+    "xdeploy": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nuxt",
+    "pm2",
+    "deployment",
+    "zero",
+    "downtime"
+  ],
+  "author": "Xander Luciano <XanderLuciano@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.16.0"
+  }
+}
